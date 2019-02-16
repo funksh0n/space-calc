@@ -14,7 +14,7 @@ main(int argc, char *argv[])
 	semimajor_axis = atof(argv[3]);
 	mu = mass * GRAV_CONST;
 	velocity_squared = mu * ( (2 / radius) - (1 / semimajor_axis) );
-	velocity = 0;//sqrt(velocity_squared);
+	velocity = sqrt(velocity_squared);
 
 	printf("G = %.16f\n", GRAV_CONST);
 	printf("\u03BC(mu) = %.16f\n", mu);

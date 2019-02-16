@@ -1,1 +1,2 @@
 sma: Calculate the barycenter
+ov: Don't forget to link in math.h with -lm
