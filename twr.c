@@ -13,8 +13,8 @@ main(int argc, char *argv[])
 	ratio = thrust / force;
 
 	printf("m = %fkg\na = %fm/s^2\nW = m * a = %fN\n", mass, acceleration, force);
-	printf("T = %fkN\nT / W = %fkN/N\n", thrust, ratio);
-	printf("TWR = %f\n", ratio * 1000);
+	printf("T = %fkN\nT / W = %.10fkN/N\n", thrust, ratio);
+	printf("TWR = %.7f\n", ratio * 1000);
 
 	return 0;
 }
