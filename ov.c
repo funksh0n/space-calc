@@ -4,7 +4,7 @@
  * Earth Mass = 5.97237*10^24
  * Altitude = 172km
  * Radius = Altitude + Earth Radius = 6.543*10^6
- * Semi-major Axis = 1.1*10^7
+ * Semi-major Axis = 11000km = 1.1*10^7
  * ./ov 5.97237E+24 6.543E+6 1.1E+7
  */
 
