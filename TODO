@@ -1,2 +1,3 @@
 sma: Calculate the barycenter
+ov: Include Standard Gravitational Parameter where known
 ov: Don't forget to link in math.h with -lm
