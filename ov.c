@@ -1,9 +1,18 @@
 /* See LICENCE for licence details. */
+
+/* Example:
+ * Earth Mass = 5.97237*10^24
+ * Altitude = 172km
+ * Radius = Altitude + Earth Radius = 6.543*10^6
+ * Semi-major Axis = 1.1*10^7
+ * ./ov 5.97237E+24 6.543E+6 1.1E+7
+ */
+
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-#define GRAV_CONST 0.0000000000667408
+#define GRAV_CONST 6.67408E-11
 
 int
 main(int argc, char *argv[])
@@ -17,9 +26,9 @@ main(int argc, char *argv[])
 	velocity = sqrt(velocity_squared);
 
 	printf("G = %.16f\n", GRAV_CONST);
-	printf("\u03BC(mu) = %.16f\n", mu);
-	printf("v\u00B2 = %.16f\n", velocity_squared);
-	printf("v = %.16f\n", velocity);
+	printf("\u03BC(mu) \u2248 %.2f\n", mu);
+	printf("v\u00B2 \u2248 %.2f\n", velocity_squared);
+	printf("v \u2248 %.2fm/s\n", velocity);
 	
 	return 0;
 }
