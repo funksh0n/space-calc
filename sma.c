@@ -1,4 +1,13 @@
 /* See LICENCE for licence details. */
+
+/* Example:
+ * Apoapsis = 300km
+ * Periapsis = 172km
+ * r1 = Apoapsis + Earth Radius = 6.678*10^6
+ * r2 = Periapsis + Earth Radius = 6.543*10^6
+ * ./sma 6.678E+6 6.543E+6
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
