@@ -14,6 +14,11 @@
 int
 main(int argc, char *argv[])
 {
+	if (argc != 3) {
+		fprintf(stderr, "Run program as 'sma apoapsis periapsis'\n");
+		return -1;
+	}
+
 	double r1, r2, a;
 	r1 = atof(argv[1]);
 	r2 = atof(argv[2]);
