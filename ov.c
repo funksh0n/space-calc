@@ -17,6 +17,11 @@
 int
 main(int argc, char *argv[])
 {
+	if (argc != 4) {
+		fprintf(stderr, "Run program as ov mass radius semi-major_axis\n");
+		return -1;
+	}
+
 	double mass, mu, radius, semimajor_axis, velocity_squared, velocity;
 	mass = atof(argv[1]);
 	radius = atof(argv[2]);

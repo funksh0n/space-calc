@@ -5,6 +5,11 @@
 int
 main(int argc, char *argv[])
 {
+	if (argc != 4) {
+		fprintf(stderr, "Run program as 'twr thrust mass acceleration'\n");
+		return -1;
+	}
+
 	double thrust, mass, acceleration, force, ratio;
 	thrust = atof(argv[1]);
 	mass = atof(argv[2]);
